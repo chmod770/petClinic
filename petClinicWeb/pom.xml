@@ -13,8 +13,8 @@
 
     <dependencies>
         <dependency>
-            <groupId>gabi.clinic</groupId>
             <artifactId>clinic-web-data</artifactId>
+            <groupId>gabi.clinic</groupId>
             <version>0.0.1-SNAPSHOT</version>
         </dependency>
         <dependency>
