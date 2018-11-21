@@ -1,34 +1,18 @@
 package gabi.clinic.demo.model;
 
+import lombok.Getter;
+import lombok.Setter;
+
 import java.time.LocalDate;
 
+<<<<<<< HEAD
 public class Pet extends BaseEntity{
+=======
+@Getter @Setter
+public class Pet {
+>>>>>>> 9b1b93fed418821b3ffc4ef5832bde9a5bc3390d
 
     private PetType petType;
     private Owner owner;
     private LocalDate birthDate;
-
-    public PetType getPetType() {
-        return petType;
-    }
-
-    public void setPetType(PetType petType) {
-        this.petType = petType;
-    }
-
-    public Owner getOwner() {
-        return owner;
-    }
-
-    public void setOwner(Owner owner) {
-        this.owner = owner;
-    }
-
-    public LocalDate getBirthDate() {
-        return birthDate;
-    }
-
-    public void setBirthDate(LocalDate birthDate) {
-        this.birthDate = birthDate;
-    }
 }

@@ -1,0 +1,8 @@
+package gabi.clinic.demo.services;
+
+import gabi.clinic.demo.model.Vet;
+
+import java.util.Set;
+
+public interface VetService extends CrudService<Vet, Long>{
+}
