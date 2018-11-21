@@ -4,7 +4,7 @@
 
 	<groupId>gabi.clinic</groupId>
 	<artifactId>demo</artifactId>
-	<version>0.0.1-SNAPSHOT</version>
+	<version>0.0.1</version>
     <modules>
         <module>petClinicWeb</module>
 		<module>clinicWebData</module>
@@ -57,7 +57,7 @@
 
 	<scm>
 		<developerConnection>scm:git:https://github.com/chmod770/petClinic.git</developerConnection>
-		<tag>demo-0.0.1</tag>
+		<tag>head</tag>
   </scm>
 
 </project>
