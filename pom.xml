@@ -50,7 +50,6 @@
 				</dependencies>
 				<configuration>
 					<goals>install</goals>
-					<autoVersionSubmodels>true</autoVersionSubmodels>
 				</configuration>
 			</plugin>
 		</plugins>
