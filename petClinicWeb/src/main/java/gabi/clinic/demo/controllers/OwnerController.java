@@ -1,6 +1,5 @@
 package gabi.clinic.demo.controllers;
 
-import gabi.clinic.demo.model.Owner;
 import gabi.clinic.demo.services.OwnerService;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -20,7 +19,6 @@ public class OwnerController {
     public String listOwners(Model model){
 
         model.addAttribute("owners", ownerService.findAll());
-
 
         return "owners/index";
     }
