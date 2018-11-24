@@ -4,8 +4,7 @@ import gabi.clinic.demo.model.Owner;
 import gabi.clinic.demo.model.Vet;
 import gabi.clinic.demo.services.OwnerService;
 import gabi.clinic.demo.services.VetService;
-import gabi.clinic.demo.services.map.OwnerServiceMap;
-import gabi.clinic.demo.services.map.vetServiceMap;
+import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
@@ -16,9 +15,10 @@ public class DataLoader implements CommandLineRunner {
     private final OwnerService ownerService;
     private final VetService vetService;
 
-    public DataLoader() {
-        ownerService = new OwnerServiceMap();
-        vetService = new vetServiceMap();
+    @Autowired
+    public DataLoader(OwnerService ownerService, VetService vetService) {
+        this.ownerService = ownerService;
+        this.vetService = vetService;
     }
 
     @Override

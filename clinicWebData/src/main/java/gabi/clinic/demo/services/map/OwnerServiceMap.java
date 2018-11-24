@@ -3,9 +3,11 @@ package gabi.clinic.demo.services.map;
 import gabi.clinic.demo.model.Owner;
 import gabi.clinic.demo.services.CrudService;
 import gabi.clinic.demo.services.OwnerService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
+@Service
 public class OwnerServiceMap extends AbstractMapService<Owner, Long> implements OwnerService{
 
     @Override
