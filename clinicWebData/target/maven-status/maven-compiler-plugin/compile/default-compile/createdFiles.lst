@@ -1,5 +1,14 @@
-gabi\clinic\demo\model\Vet.class
 gabi\clinic\demo\model\PetType.class
-gabi\clinic\demo\model\Person.class
 gabi\clinic\demo\model\Pet.class
 gabi\clinic\demo\model\Owner.class
+gabi\clinic\demo\model\Person.class
+gabi\clinic\demo\services\VetService.class
+gabi\clinic\demo\model\Vet.class
+gabi\clinic\demo\services\map\OwnerServiceMap.class
+gabi\clinic\demo\services\CrudService.class
+gabi\clinic\demo\services\PetService.class
+gabi\clinic\demo\services\OwnerService.class
+gabi\clinic\demo\model\BaseEntity.class
+gabi\clinic\demo\services\map\PetServiceMap.class
+gabi\clinic\demo\services\map\AbstractMapService.class
+gabi\clinic\demo\services\map\VetServiceMap.class
