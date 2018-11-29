@@ -1,11 +1,13 @@
 package gabi.clinic.demo.services.map;
 
 import gabi.clinic.demo.model.Speciality;
-import gabi.clinic.demo.services.SpecialitiesService;
+import gabi.clinic.demo.services.SpecialityService;
+import org.springframework.stereotype.Service;
 
 import java.util.Set;
 
-public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialitiesService{
+@Service
+public class SpecialityMapService extends AbstractMapService<Speciality, Long> implements SpecialityService {
     @Override
     public Set<Speciality> findAll() {
         return super.findAll();
