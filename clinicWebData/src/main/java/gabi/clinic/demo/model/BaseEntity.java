@@ -9,8 +9,9 @@ import javax.persistence.Id;
 import javax.persistence.MappedSuperclass;
 import java.io.Serializable;
 
+@Getter
+@Setter
 @MappedSuperclass
-@Getter @Setter
 public class BaseEntity implements Serializable{
      @Id
      @GeneratedValue(strategy=GenerationType.IDENTITY)
