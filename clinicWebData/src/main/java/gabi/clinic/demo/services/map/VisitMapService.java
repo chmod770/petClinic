@@ -7,7 +7,7 @@ import org.springframework.stereotype.Service;
 import java.util.Set;
 
 @Service
-public class VisitServiceMap extends AbstractMapService<Visit, Long> implements VisitService{
+public class VisitMapService extends AbstractMapService<Visit, Long> implements VisitService{
 
 
     @Override
@@ -31,7 +31,6 @@ public class VisitServiceMap extends AbstractMapService<Visit, Long> implements 
            || visit.getPet().getOwner()==null || visit.getPet().getOwner().getId()==null ){
             throw new RuntimeException("Invalid Visit");
         }
-
         return super.save(visit);
     }
 
