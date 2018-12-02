@@ -1,15 +1,11 @@
 package gabi.clinic.demo.bootstrap;
 
 import gabi.clinic.demo.model.*;
-import gabi.clinic.demo.services.OwnerService;
-import gabi.clinic.demo.services.PetTypeService;
-import gabi.clinic.demo.services.SpecialityService;
-import gabi.clinic.demo.services.VetService;
+import gabi.clinic.demo.services.*;
 import org.springframework.boot.CommandLineRunner;
 import org.springframework.stereotype.Component;
 
 import java.time.LocalDate;
-import java.util.HashSet;
 
 @Component
 public class DataLoader implements CommandLineRunner {
@@ -18,12 +14,14 @@ public class DataLoader implements CommandLineRunner {
     private final VetService vetService;
     private final PetTypeService petTypeService;
     private final SpecialityService specialityService;
+    private final VisitService visitService;
 
-    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService) {
+    public DataLoader(OwnerService ownerService, VetService vetService, PetTypeService petTypeService, SpecialityService specialityService, VisitService visitService) {
         this.ownerService = ownerService;
         this.vetService = vetService;
         this.petTypeService = petTypeService;
         this.specialityService = specialityService;
+        this.visitService = visitService;
     }
 
     @Override
@@ -95,6 +93,20 @@ public class DataLoader implements CommandLineRunner {
         ownerService.save(owner2);
 
         System.out.println("Loaded Owners...");
+
+        Visit catVisit = new Visit();
+        catVisit.setPet(bobsPet);
+        catVisit.setDate(LocalDate.now());
+        catVisit.setDescription("Sneezy kitty");
+
+        visitService.save(catVisit);
+
+        Visit dogVisit = new Visit();
+        dogVisit.setPet(tonysPet);
+        dogVisit.setDate(LocalDate.now());
+        dogVisit.setDescription("Sneezy doggy");
+
+        visitService.save(dogVisit);
 
         Vet vet1 = new Vet();
         vet1.setFirstName("Anthony");
