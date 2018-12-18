@@ -1,0 +1,5 @@
+gabi\clinic\demo\controllers\IndexController.class
+gabi\clinic\demo\bootstrap\DataLoader.class
+gabi\clinic\demo\DemoApplication.class
+gabi\clinic\demo\controllers\OwnerController.class
+gabi\clinic\demo\controllers\VetController.class
